@@ -1,0 +1,14 @@
+[package]
+edition = "2018"
+name = "web"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.4.3"
+domain = {path = "../domain"}
+infra = {path = "../infra"}
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "*"
+tokio = {features = ["full"], version = "1.15.0"}
